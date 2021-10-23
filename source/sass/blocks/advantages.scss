@@ -1,0 +1,70 @@
+.advantages {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  h3 {
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  p {
+    letter-spacing: 1px;
+    margin: 0;
+  }
+}
+
+.advantages__low-price {
+  position: relative;
+  width: 311px;
+  background-image: url("../img/ellipse-bg.svg");
+  background-repeat: no-repeat;
+  background-size: 234px 234px;
+  background-position: 50% 50%;
+  margin-top: 85px;
+  padding: 60px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -35px;
+    left: 155px;
+    width: 4px;
+    height: 46px;
+    background-image: url("../img/arrow-btm.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.advantages__quality {
+  position: relative;
+  width: 311px;
+  background-image: url("../img/ellipse-bg.svg");
+  background-repeat: no-repeat;
+  background-size: 234px 234px;
+  background-position: 50% 50%;
+  margin-top: 20px;
+  padding: 60px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -35px;
+    left: 155px;
+    width: 4px;
+    height: 46px;
+    background-image: url("../img/arrow-btm.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.advantages__manufactured {
+  width: 311px;
+  background-image: url("../img/ellipse-bg.svg");
+  background-repeat: no-repeat;
+  background-size: 234px 234px;
+  background-position: 50% 50%;
+  margin-top: 20px;
+  padding: 60px 0;
+}

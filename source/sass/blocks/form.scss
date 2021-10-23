@@ -1,0 +1,65 @@
+.form {
+  margin-bottom: 85px;
+
+  fieldset {
+    width: 325px;
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+  }
+
+  input {
+    display: block;
+    width: 283px;
+    background-color: transparent;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid $grey2;
+
+    &::placeholder {
+      font-size: 16px;
+      font-weight: 300;
+      letter-spacing: 1px;
+      color: $grey;
+    }
+  }
+}
+
+.form__agreement {
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  width: 295px;
+  color: $grey;
+  margin: 30px auto 35px auto;
+  opacity: 0.6;
+}
+
+.form__button-subm {
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  width: 185px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: $grey3;
+  margin-left: 15px;
+  padding: 0;
+  border: 1px solid $grey2;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+    transition: 0.5s;
+  }
+}

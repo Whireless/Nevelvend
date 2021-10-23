@@ -1,0 +1,24 @@
+.individ-price__intro {
+  text-align: center;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 295px;
+  margin: 85px auto 35px auto;
+
+  h2 {
+    font-size: 24px;
+    width: 240px;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.individ-price__full-info {
+  display: none;
+}

@@ -1,0 +1,118 @@
+.main-footer {
+  h4 {
+    color: $gold;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  p {
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: $white;
+    transition: 0.5s;
+
+    &:hover,
+    &:focus {
+      opacity: 0.3;
+      transition: 0.5s;
+    }
+  }
+}
+
+.main-footer__title {
+  font-size: 24px;
+  letter-spacing: 1px;
+  width: 205px;
+  margin: 0 auto 60px auto;
+}
+
+.main-footer__office-adress {
+  text-align: center;
+  width: 264px;
+  margin: 0 auto;
+
+  p {
+    &:nth-of-type(2) {
+      margin-top: 15px;
+    }
+  }
+}
+
+.main-footer__mail-adress {
+  text-align: center;
+  width: 274px;
+  margin: 30px auto;
+
+  p {
+    &:nth-of-type(2) {
+      margin-top: 15px;
+    }
+  }
+}
+
+.main-footer__contacts {
+  text-align: center;
+  width: 190px;
+  margin: 0 auto;
+
+  p {
+    &:last-of-type {
+      margin-top: 60px;
+    }
+  }
+}
+
+.main-footer__other-info {
+  text-align: center;
+  font-weight: 300;
+  width: 267px;
+  color: $grey;
+  opacity: 0.6;
+  margin: 36px auto 0 auto;
+
+  a {
+    color: $grey;
+  }
+
+  p {
+    text-decoration: underline;
+  }
+}
+
+.main-footer__socials {
+  width: 121px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+
+  a {
+    display: block;
+
+    &:first-of-type {
+      width: 23px;
+      height: 23px;
+      background-image: url("../img/insta.svg");
+      background-repeat: no-repeat;
+    }
+
+    &:nth-of-type(2) {
+      width: 12px;
+      height: 24px;
+      background-image: url("../img/fb.svg");
+      background-repeat: no-repeat;
+    }
+
+    &:last-of-type {
+      width: 26px;
+      height: 15px;
+      background-image: url("../img/vk.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}

@@ -2,7 +2,7 @@ body {
   font-family: "Rubik", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
-  min-width: 360px;
+  min-width: 375px;
   color: $white;
   background: $brown;
   margin: 0;
@@ -20,4 +20,8 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.blue-text {
+  color: $blue;
 }

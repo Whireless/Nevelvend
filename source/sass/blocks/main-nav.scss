@@ -10,7 +10,7 @@
 
 .main-nav__logo {
   display: block;
-  margin: 10px 85px 0 85px;
+  margin: 10px auto 0 auto;
   transition: 0.5s;
 
   &:hover,
@@ -69,8 +69,8 @@
   display: block;
   top: 35px;
   right: 30px;
-  width: 26px;
-  height: 20px;
+  width: 30px;
+  height: 25px;
   background-color: transparent;
   margin: 0;
   padding: 0;
@@ -102,7 +102,7 @@
   list-style: none;
   opacity: 0.95;
   z-index: 3;
-  transform: translateY(-110%);
+  transform: translateY(-135%);
   transition: 0.5s;
 
   &--open {
