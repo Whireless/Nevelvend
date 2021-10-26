@@ -33,6 +33,11 @@
   margin: 0 auto 60px auto;
 }
 
+.main-footer__contact-block {
+  display: flex;
+  flex-direction: column;
+}
+
 .main-footer__office-adress {
   text-align: center;
   width: 264px;
@@ -116,5 +121,47 @@
       background-image: url("../img/vk.svg");
       background-repeat: no-repeat;
     }
+  }
+}
+
+@media (min-width: $tabletWidth) {
+  .main-footer {
+    background-image: url("../img/bg-noise.png");
+    background-repeat: no-repeat;
+    padding-bottom: 60px;
+  }
+
+  .main-footer__title {
+    font-size: 34px;
+    font-weight: 500;
+    width: 280px;
+  }
+
+  .main-footer__contact-block {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-footer__office-adress {
+    font-weight: 300;
+  }
+
+  .main-footer__mail-adress {
+    font-weight: 300;
+    margin: 0;
+  }
+
+  .main-footer__contacts {
+    font-weight: 300;
+
+    p {
+      &:last-of-type {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  .main-footer__other-info {
+    margin-top: 50px;
   }
 }

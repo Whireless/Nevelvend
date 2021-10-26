@@ -2,7 +2,8 @@
   text-align: center;
   letter-spacing: 1px;
   width: 311px;
-  margin: 85px auto 0 auto;
+  margin: 0 auto;
+  padding-top: 85px;
 
   h2 {
     font-size: 36px;
@@ -16,7 +17,8 @@
 }
 
 .order__options {
-  margin-top: 30px;
+  width: 325px;
+  margin: 30px auto 0 auto;
 }
 
 .order__title-block {
@@ -32,6 +34,7 @@
   background-color: transparent;
   color: $white;
   margin: 0;
+  padding: 0;
   border: none;
   cursor: pointer;
   flex: 0 0 auto;
@@ -45,7 +48,7 @@
   }
 
   &--box {
-    margin: 0 10px;
+    margin: 0 20px;
 
     &--active {
       color: $gold;
@@ -169,7 +172,7 @@
 
 .order__button {
   position: absolute;
-  top: 26px;
+  top: 25px;
   width: 12px;
   height: 12px;
   padding: 0;
@@ -225,7 +228,8 @@
 
     &:hover,
     &:focus {
-      opacity: 0.4;
+      color: $gold;
+      border: 1px solid $gold;
       transition: 0.5s;
     }
   }
@@ -238,5 +242,113 @@
   a {
     color: $white;
     opacity: 0.2;
+  }
+}
+
+@media (min-width: $tabletWidth) {
+  .order {
+    background-image: url("../img/bg-noise.png");
+    background-repeat: no-repeat;
+  }
+
+  .order__intro-info {
+    width: 520px;
+
+    h2 {
+      font-size: 34px;
+      font-weight: 500;
+      margin-bottom: 35px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .order__options {
+    width: 678px;
+    margin-top: 50px;
+  }
+
+  .order__title-block {
+    justify-content: space-around;
+    padding-bottom: 10px;
+  }
+
+  .order__title {
+    font-size: 18px;
+
+    &--box {
+      margin: 0;
+    }
+  }
+
+  .order__specifications {
+    font-size: 16px;
+    font-weight: 300;
+    color: $grey;
+  }
+
+  .order__box {
+    font-size: 16px;
+    font-weight: 300;
+    color: $grey;
+  }
+
+  .order__buy {
+    font-size: 15px;
+    font-weight: 300;
+    color: $grey;
+  }
+
+  .order__box-type {
+    display: grid;
+    grid-template-columns: 330px max-content;
+    grid-template-rows: repeat(3, min-content);
+    column-gap: 60px;
+  }
+
+  .order__box-format {
+    font-size: 25px;
+    font-weight: 500;
+    width: 241px;
+    margin-left: 225px;
+    margin-bottom: 30px;
+  }
+
+  .order__small-box {
+    font-size: 15px;
+    grid-column: 1 / 2;
+    opacity: 0.7;
+    border: none;
+
+    &:hover,
+    &:focus {
+      background: transparent;
+      opacity: 0.7;
+    }
+  }
+
+  .order__big-box {
+    font-size: 15px;
+    grid-column: 1 / 2;
+    opacity: 0.7;
+    border: none;
+
+    &:hover,
+    &:focus {
+      background: transparent;
+      opacity: 0.7;
+    }
+  }
+
+  .order__total-price {
+    height: 44px;
+    margin-top: -30px;
+  }
+
+  .order__you-price {
+    font-size: 16px;
+    width: 250px;
   }
 }

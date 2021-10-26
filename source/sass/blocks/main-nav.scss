@@ -123,12 +123,63 @@
 
     &:hover,
     &:focus {
-      opacity: 0.7;
+      color: $gold;
       transition: 0.5s;
     }
   }
 
   &+.main-nav__item {
     margin-top: 15px;
+  }
+}
+
+@media (min-width: $tabletWidth) {
+  .main-nav {
+    width: 678px;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 45px 0 45px;
+    margin: 0 auto;
+  }
+
+  .main-nav__nav-head {
+    width: 188px;
+  }
+  .main-nav__button-block {
+    display: none;
+  }
+
+  .main-nav__logo {
+    align-self: flex-start;
+    margin: 0;
+  }
+
+  .main-nav__list {
+    width: 430px;
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 20px;
+    background: transparent;
+    padding: 0;
+    transform: translateY(0);
+    border-bottom: 1px solid #8a8a8a40;
+    opacity: 1;
+  }
+
+  .main-nav__item {
+    &:last-of-type {
+      display: none;
+    }
+
+    &+.main-nav__item {
+      margin-top: 0;
+    }
+
+    a {
+      font-size: 13px;
+    }
   }
 }

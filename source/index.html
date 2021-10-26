@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap">
+  <link rel="icon" href="favicon.ico">
   <title>Nevelvend</title>
 </head>
 <body>
@@ -26,50 +27,54 @@
         </div>
       </div>
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="#">о размешивателе</a></li>
-        <li class="main-nav__item"><a href="#">заказать</a></li>
-        <li class="main-nav__item"><a href="#">индивидуальная цена</a></li>
+        <li class="main-nav__item"><a href="#advantages">о размешивателе</a></li>
+        <li class="main-nav__item"><a href="#order">заказать</a></li>
+        <li class="main-nav__item"><a href="#individ-price">индивидуальная цена</a></li>
         <li class="main-nav__item"><a href="#">контакты</a></li>
       </ul>
     </nav>
     <section class="main-header__intro">
       <div class="container">
         <h1 class="main-header__title"> <span class="main-header__low-text">Одноразовый</span> пластиковый <span class="main-header__low-text">размешиватель</span> для холодных и горячих напитков</h1>
-        <p class="main-header__info">От <ins>30 копеек</ins> за штуку. Подходит для холодных и горячих напитков, для вендинга и HoReCa </p>
-        <picture>
-          <source>
-          <source>
-          <img src="img/mobile/bg.png" srcset="img/mobile/bg@2x.png 2x" width="218" height="418" alt="Таких полезных палочек нигде нету, даже у нас не сразу появились.">
-        </picture>
-        <div class="main-header__links-block">
-          <a class="main-header__link" href="#">Заказать</a>
-          <a class="main-header__link" href="#">Узнать больше</a>
+        <div class="main-header__info-block">
+          <p class="main-header__info">От <ins>30 копеек</ins> за штуку. Подходит для холодных и горячих напитков, для вендинга и HoReCa </p>
+          <picture>
+            <source>
+            <source>
+            <img src="img/mobile/bg.png" srcset="img/mobile/bg@2x.png 2x" width="218" height="418" alt="Таких полезных палочек нигде нету, даже у нас не сразу появились.">
+          </picture>
+          <div class="main-header__links-block">
+            <a class="main-header__link" href="#">Заказать</a>
+            <a class="main-header__link" href="#">Узнать больше</a>
+          </div>
         </div>
       </div>
     </section>
   </header>
   <main>
-    <section class="advantages">
+    <section class="advantages" id="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
       <div class="container">
-        <div class="advantages__low-price">
-          <h3>Недорогой</h3>
-          <p>Одноразовый пластиковый размешиватель Nevelvend для холодных и горячих напитков вы можете,
-            выбрав тип и количество коробок ниже</p>
-        </div>
-        <div class="advantages__quality">
-          <h3>Качественный</h3>
-          <p>Одноразовый пластиковый размешиватель Nevelvend для холодных и горячих напитков вы можете,
-            выбрав тип и количество коробок ниже</p>
-        </div>
-        <div class="advantages__manufactured">
-          <h3>Экологичный</h3>
-          <p>Одноразовый пластиковый размешиватель Nevelvend для холодных и горячих напитков вы можете,
-            выбрав тип и количество коробок ниже</p>
+        <div class="advantages__info-block">
+          <div class="advantages__low-price">
+            <h3>Недорогой</h3>
+            <p>Одноразовый пластиковый размешиватель Nevelvend для холодных и горячих напитков вы можете,
+              выбрав тип и количество коробок ниже</p>
+          </div>
+          <div class="advantages__quality">
+            <h3>Качественный</h3>
+            <p>Одноразовый пластиковый размешиватель Nevelvend для холодных и горячих напитков вы можете,
+              выбрав тип и количество коробок ниже</p>
+          </div>
+          <div class="advantages__manufactured">
+            <h3>Экологичный</h3>
+            <p>Одноразовый пластиковый размешиватель Nevelvend для холодных и горячих напитков вы можете,
+              выбрав тип и количество коробок ниже</p>
+          </div>
         </div>
       </div>
     </section>
-    <section class="order">
+    <section class="order" id="order">
       <div class="container">
         <div class="order__intro-info">
           <h2>Заказать</h2>
@@ -152,7 +157,7 @@
         <p class="order__you-price"><a href="#">Хотите индивидуальную цену?</a></p>
       </div>
     </section>
-    <section class="individ-price">
+    <section class="individ-price" id="individ-price">
       <div class="container">
         <div class="individ-price__intro">
           <h2>Индивидуальная цена</h2>
@@ -178,24 +183,26 @@
   <footer class="main-footer">
     <div class="container">
       <h3 class="main-footer__title">Наши контакты</h3>
-      <div class="main-footer__office-adress">
-        <h4>Центральный офис</h4>
-        <p>195221, Россия, г. Санкт-Петербург, ул. Ключевая, дом 30, литера А, помещение 303</p>
-        <p><a href="tel:++78126004801">+7 (812) 600-48-01</a></p>
-      </div>
-      <div class="main-footer__mail-adress">
-        <h4>Почтовый адрес</h4>
-        <p>182500, Россия, Псковская область, г. Невель, ул. Лермонтова, дом 13</p>
-        <p><a href="tel:++7(81151)21785">+7 (81151) 2-17-85</a></p>
-      </div>
-      <div class="main-footer__contacts">
-        <h4>Контакты</h4>
-        <p>8 (800) 775-95-05 <br> info@nevelvendmoloko.ru</p>
-        <p class="main-footer__socials">
-          <a href="#" aria-label="Мы в Инстаграме"></a>
-          <a href="#" aria-label="Мы в Фейсбуке"></a>
-          <a href="#" aria-label="Мы в ВК"></a>
-        </p>
+      <div class="main-footer__contact-block">
+        <div class="main-footer__office-adress">
+          <h4>Центральный офис</h4>
+          <p>195221, Россия, г. Санкт-Петербург, ул. Ключевая, дом 30, литера А, помещение 303</p>
+          <p><a href="tel:++78126004801">+7 (812) 600-48-01</a></p>
+        </div>
+        <div class="main-footer__mail-adress">
+          <h4>Почтовый адрес</h4>
+          <p>182500, Россия, Псковская область, г. Невель, ул. Лермонтова, дом 13</p>
+          <p><a href="tel:++7(81151)21785">+7 (81151) 2-17-85</a></p>
+        </div>
+        <div class="main-footer__contacts">
+          <h4>Контакты</h4>
+          <p>8 (800) 775-95-05 <br> info@nevelvendmoloko.ru</p>
+          <p class="main-footer__socials">
+            <a href="#" aria-label="Мы в Инстаграме"></a>
+            <a href="#" aria-label="Мы в Фейсбуке"></a>
+            <a href="#" aria-label="Мы в ВК"></a>
+          </p>
+        </div>
       </div>
       <div class="main-footer__other-info">
         <p>© 2021 «НЕВЕЛЬКОНСЕРВМОЛОКО»</p>
