@@ -47,3 +47,32 @@
     }
   }
 }
+
+@media (min-width: $desktopWidth) {
+  .individ-price {
+    background-image: url("../img/desktop/ind-price-bg.png");
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/desktop/ind-price-bg@2x.png");
+      background-size: cover;
+    }
+  }
+
+  .individ-price__intro {
+    text-align: left;
+    margin-left: 100px;
+
+    h2 {
+      text-align: left;
+      font-size: 36px;
+      width: 100%;
+    }
+
+    p {
+      font-weight: 300;
+    }
+  }
+}

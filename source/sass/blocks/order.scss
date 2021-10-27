@@ -352,3 +352,88 @@
     width: 250px;
   }
 }
+
+@media (min-width: $desktopWidth) {
+  .order {
+    background-image: url("../img/desktop/order-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/desktop/order-bg@2x.png");
+      background-size: cover;
+    }
+  }
+
+  .order__intro-info {
+    text-align: left;
+    width: 550px;
+    margin-left: 100px;
+
+    h2 {
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 22px;
+      font-weight: 300;
+    }
+  }
+
+  .order__options {
+    margin-top: 100px;
+    margin-left: 100px;
+  }
+
+  .order__title-block {
+    width: 580px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .order__title {
+    font-size: 20px;
+  }
+
+  .order__box-type {
+    grid-template-columns: 340px 340px;
+    grid-template-rows: max-content max-content;
+    column-gap: 10px;
+    row-gap: 50px;
+  }
+
+  .order__box-format {
+    display: none;
+  }
+
+  .order__small-box {
+    position: relative;
+    padding: 15px 25px 15px 0;
+
+    &::after {
+      position: absolute;
+      width: 1px;
+      height: 55px;
+      content: "";
+      top: 10px;
+      right: 1px;
+      background-color: $grey2;
+    }
+  }
+
+  .order__big-box {
+    grid-column: 2 / 3;
+    padding: 15px 25px 15px 0;
+  }
+
+  .order__total-price {
+    grid-row: 2 / 3;
+    margin-right: 105px;
+  }
+
+  .order__you-price {
+    margin-top: 140px;
+    margin-left: 100px;
+    padding-bottom: 50px;
+  }
+}

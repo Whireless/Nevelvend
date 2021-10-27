@@ -165,3 +165,58 @@
     margin-top: 50px;
   }
 }
+
+@media (min-width: $desktopWidth) {
+  .main-footer__title {
+    display: none;
+  }
+
+  .main-footer__contact-block {
+    justify-content: space-between;
+    padding-top: 50px;
+    opacity: 0.5;
+  }
+
+  .main-footer__office-adress {
+    text-align: left;
+    width: 336px;
+    margin: 0;
+  }
+
+  .main-footer__mail-adress {
+    text-align: left;
+  }
+
+  .main-footer__contacts {
+    text-align: left;
+    margin: 0;
+
+    p {
+      &:last-of-type {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .main-footer__socials {
+    margin-left: 0;
+  }
+
+  .main-footer__other-info {
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    opacity: 0.2;
+
+    p {
+      &:nth-of-type(2) {
+        margin-left: 30px;
+      }
+
+      &:last-of-type {
+        margin-right: -35px;
+      }
+    }
+  }
+}

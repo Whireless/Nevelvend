@@ -96,3 +96,26 @@
     margin-left: 0;
   }
 }
+
+@media (min-width: $desktopWidth) {
+  .form {
+    fieldset {
+      column-gap: 30px;
+      margin-left: 100px;
+    }
+
+    input {
+      width: 267px;
+    }
+  }
+
+  .form__agreement {
+    font-size: 12px;
+    width: 375px;
+  }
+
+  .form__button-subm {
+    margin-top: 20px;
+  }
+
+}

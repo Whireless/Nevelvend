@@ -183,3 +183,21 @@
     }
   }
 }
+
+@media (min-width: $desktopWidth) {
+  .main-nav {
+    width: 960px;
+    padding: 70px 45px 0 45px;
+  }
+
+  .main-nav__list {
+    width: 480px;
+    justify-content: space-between;
+  }
+
+  .main-nav__item {
+    a {
+      font-size: 15px;
+    }
+  }
+}

@@ -7,4 +7,9 @@
     width: 678px;
     padding: 0 45px;
   }
+
+  @media (min-width: $desktopWidth) {
+    width: 960px;
+    padding: 0 120px;
+  }
 }

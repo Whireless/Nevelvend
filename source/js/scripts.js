@@ -1,6 +1,7 @@
 'use strict';
 
 const navMain = document.querySelector('.main-nav__list'),
+      navElem = document.querySelectorAll('.main-nav__item a'),
       navBtn = document.querySelector('.main-nav__menu-button'),
       navHead = document.querySelector('.main-nav__button-block');
 
@@ -17,6 +18,15 @@ const ordBtn1 = document.querySelector('.order__title--specific'),
 navBtn.addEventListener('click', function() {
   navMain.classList.toggle('main-nav__list--open')
   navHead.classList.toggle('main-nav__button-block--open')
+});
+
+navElem.forEach(a => {
+  a.addEventListener('click', function() {
+    if(navMain.classList.contains('main-nav__list--open')) {
+      navMain.classList.remove('main-nav__list--open')
+      navHead.classList.remove('main-nav__button-block--open')
+    }
+  })
 });
 
 // Кнопки в блоке заказа
