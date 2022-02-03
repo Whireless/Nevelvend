@@ -5,15 +5,15 @@
   margin: 0 auto;
   padding-top: 85px;
 
-  h2 {
-    font-size: 36px;
-    margin-top: 0;
-    margin-bottom: 20px;
-  }
-
   p {
     margin: 0;
   }
+}
+
+.order__title {
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .order__options {
@@ -27,9 +27,10 @@
   overflow-x: auto;
   border-bottom: 1px solid #8a8a8a40;
   margin-bottom: 30px;
+  padding: 10px 0;
 }
 
-.order__title {
+.order__subtitle {
   letter-spacing: 1px;
   background-color: transparent;
   color: $white;
@@ -40,57 +41,17 @@
   flex: 0 0 auto;
   transition: 0.5s;
 
-  &--specific {
-    &--active {
-      color: $gold;
-      transition: 0.5s;
-    }
-  }
-
   &--box {
     margin: 0 20px;
-
-    &--active {
-      color: $gold;
-      transition: 0.5s;
-    }
   }
-
-  &--buy {
-    &--active {
-      color: $gold;
-      transition: 0.5s;
-    }
-  }
-}
-
-.order__specifications {
-  display: none;
 
   &--active {
-    letter-spacing: 1px;
-    display: block;
-  }
-
-  p {
-    margin: 0;
+    color: $gold;
+    transition: 0.5s;
   }
 }
 
-.order__box {
-  display: none;
-
-  &--active {
-    letter-spacing: 1px;
-    display: block;
-  }
-
-  p {
-    margin: 0;
-  }
-}
-
-.order__buy {
+.order__info {
   display: none;
 
   &--active {
@@ -180,13 +141,15 @@
   border: none;
   cursor: pointer;
 
-  &--up {
+  &--small-up,
+  &--big-up {
     background-image: url("../img/+.svg");
     background-repeat: no-repeat;
     right: 5px;
   }
 
-  &--down {
+  &--small-down,
+  &--big-down {
     background-image: url("../img/-.svg");
     background-repeat: no-repeat;
     left: 5px;
@@ -254,15 +217,15 @@
   .order__intro-info {
     width: 520px;
 
-    h2 {
-      font-size: 34px;
-      font-weight: 500;
-      margin-bottom: 35px;
-    }
-
     p {
       font-size: 20px;
     }
+  }
+
+  .order__title {
+    font-size: 34px;
+    font-weight: 500;
+    margin-bottom: 35px;
   }
 
   .order__options {
@@ -275,7 +238,7 @@
     padding-bottom: 10px;
   }
 
-  .order__title {
+  .order__subtitle {
     font-size: 18px;
 
     &--box {
@@ -283,20 +246,8 @@
     }
   }
 
-  .order__specifications {
+  .order__info {
     font-size: 16px;
-    font-weight: 300;
-    color: $grey;
-  }
-
-  .order__box {
-    font-size: 16px;
-    font-weight: 300;
-    color: $grey;
-  }
-
-  .order__buy {
-    font-size: 15px;
     font-weight: 300;
     color: $grey;
   }
@@ -370,14 +321,14 @@
     width: 550px;
     margin-left: 100px;
 
-    h2 {
-      font-size: 36px;
-    }
-
     p {
       font-size: 22px;
       font-weight: 300;
     }
+  }
+
+  .order__title {
+    font-size: 36px;
   }
 
   .order__options {
@@ -391,8 +342,12 @@
     margin-bottom: 20px;
   }
 
-  .order__title {
+  .order__subtitle {
     font-size: 20px;
+  }
+
+  .order__info {
+    height: 84px;
   }
 
   .order__box-type {

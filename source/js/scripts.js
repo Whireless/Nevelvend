@@ -1,20 +1,20 @@
-'use strict';
+const page = document.querySelector('body');
 
-const navMain = document.querySelector('.main-nav__list'),
-      navElem = document.querySelectorAll('.main-nav__item a'),
-      navBtn = document.querySelector('.main-nav__menu-button'),
-      navHead = document.querySelector('.main-nav__button-block');
+const nav = page.querySelector('.main-nav');
+const navHead = nav.querySelector('.main-nav__button-block'),
+      navBtn = nav.querySelector('.main-nav__menu-button'),
+      navMain = nav.querySelector('.main-nav__list'),
+      navElem = navMain.querySelectorAll('.main-nav__item a');
 
-const ordBtn1 = document.querySelector('.order__title--specific'),
-      ordBtn2 = document.querySelector('.order__title--box'),
-      ordBtn3 = document.querySelector('.order__title--buy'),
-      zone1 = document.querySelector('.order__specifications'),
-      zone2 = document.querySelector('.order__box'),
-      zone3 = document.querySelector('.order__buy');
-
+const order = page.querySelector('.order'),
+      orderButtons = order.querySelectorAll('.order__subtitle'),
+      orderBlocks = order.querySelectorAll('.order__info'),
+      smlBtnUp = order.querySelector('.order__button--small-up'),
+      smlBtnDown = order.querySelector('.order__button--small-down'),
+      bigBtnUp = order.querySelector('.order__button--big-up'),
+      bigBtnDown = order.querySelector('.order__button--big-down');
 
 // Мобильное меню
-
 navBtn.addEventListener('click', function() {
   navMain.classList.toggle('main-nav__list--open')
   navHead.classList.toggle('main-nav__button-block--open')
@@ -29,36 +29,17 @@ navElem.forEach(a => {
   })
 });
 
-// Кнопки в блоке заказа
+// Блоки с информацией о заказе
+for (let i = 0; i < orderButtons.length; i++) {
+  orderButtons[i].addEventListener('click', function () {
+    orderButtons[i].classList.add('order__subtitle--active')
+    orderBlocks[i].classList.add('order__info--active')
 
-zone1.classList.add('order__specifications--active');
-
-ordBtn1.addEventListener('click', function() {
-  ordBtn1.classList.add('order__title--specific--active')
-  ordBtn2.classList.remove('order__title--box--active')
-  ordBtn3.classList.remove('order__title--buy--active')
-
-  zone1.classList.add('order__specifications--active')
-  zone2.classList.remove('order__box--active')
-  zone3.classList.remove('order__buy--active')
-});
-
-ordBtn2.addEventListener('click', function() {
-  ordBtn2.classList.add('order__title--box--active')
-  ordBtn1.classList.remove('order__title--specific--active')
-  ordBtn3.classList.remove('order__title--buy--active')
-
-  zone2.classList.add('order__box--active')
-  zone1.classList.remove('order__specifications--active')
-  zone3.classList.remove('order__buy--active')
-});
-
-ordBtn3.addEventListener('click', function() {
-  ordBtn3.classList.add('order__title--buy--active')
-  ordBtn1.classList.remove('order__title--specific--active')
-  ordBtn2.classList.remove('order__title--box--active')
-
-  zone3.classList.add('order__buy--active')
-  zone1.classList.remove('order__specifications--active')
-  zone2.classList.remove('order__box--active')
-});
+    for (let j = 0; j < orderButtons.length; j++) {
+      if (i !== j) {
+        orderButtons[j].classList.remove('order__subtitle--active')
+        orderBlocks[j].classList.remove('order__info--active')
+      }
+    }
+  })
+};
