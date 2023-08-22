@@ -138,6 +138,7 @@
   height: 12px;
   padding: 0;
   background-color: transparent;
+  background-size: cover;
   border: none;
   cursor: pointer;
 
@@ -153,6 +154,10 @@
     background-image: url("../img/-.svg");
     background-repeat: no-repeat;
     left: 5px;
+  }
+
+  &:disabled {
+    opacity: 0.5;
   }
 }
 
@@ -374,11 +379,28 @@
       right: 1px;
       background-color: $grey2;
     }
+
+    p {
+      &:nth-child(3) {
+        width: 61px;
+      }
+    }
   }
 
   .order__big-box {
     grid-column: 2 / 3;
     padding: 15px 25px 15px 0;
+
+    p {
+      &:nth-child(3) {
+        width: 61px;
+      }
+    }
+  }
+
+  .order__button {
+    width: 14px;
+    height: 14px;
   }
 
   .order__total-price {
